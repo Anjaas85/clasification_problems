@@ -1,5 +1,5 @@
 import numpy as np
-from libs.math import sigmoid
+from libreria.math import sigmoid
 
 class LogisticRegression:
     def __init__(self, num_features : int):

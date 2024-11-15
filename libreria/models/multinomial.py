@@ -1,6 +1,6 @@
-from libs.models.logistic_regression import LogisticRegression
+from libreria.models.logistic_regression import LogisticRegression
 import numpy as np
-from libs.math import softmax
+from libreria.math import softmax
 
 
 class SoftmaxClassifier(LogisticRegression):

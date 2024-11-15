@@ -1,5 +1,5 @@
 import numpy as np
-from libs.models.logistic_regression import LogisticRegression
+from libreria.models.logistic_regression import LogisticRegression
 
 class LogisticRegressionPenalized(LogisticRegression):
     def __init__(self, num_features: int, lambda_: float = 0.1):

@@ -31,5 +31,11 @@ def softmax(y):
     ##############################
     ###     YOUR CODE HERE     ###
     ##############################
+    y_shifted = y - np.max(y, axis=1, keepdims=True)
+    
+    exp_scores = np.exp(y_shifted)
+    
+    softmax_scores = exp_scores / np.sum(exp_scores, axis=1, keepdims=True)
+    
     return softmax_scores
 
